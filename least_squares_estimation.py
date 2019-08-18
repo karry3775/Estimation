@@ -10,7 +10,6 @@ for i in range(len(data)):
     plt.plot(i,data[i],'rx',label="MEASURED VALUE")
 
 H = np.array([[1,1,1,1,1]]).T
-print(np.matmul(H.T,H))
 k = np.matmul(H.T,H)
 p = np.linalg.inv(k)
 # print(np.matmul(np.array(1/(int(np.matmul(H.T,H)))),H.T))
